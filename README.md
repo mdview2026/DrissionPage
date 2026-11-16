@@ -1,119 +1,151 @@
-# ✨️ 概述
+# DrissionPage · Fork 增强版
 
-DrissionPage 是一个基于 python 的网页自动化工具。
+> 本仓库是 [g1879/DrissionPage](https://github.com/g1879/DrissionPage) 的 **fork**，在上游基础上持续增加新功能。
+> 所有新增能力均为 **opt-in**：不改变上游任何既有行为，旧代码零修改即可运行。
+>
+> 上游完整文档与官方网站：[https://DrissionPage.cn](https://drissionpage.cn)
 
-它既能控制浏览器，也能收发数据包，还能把两者合而为一。
-
-可兼顾浏览器自动化的便利性和 requests 的高效率。
-
-它功能强大，内置无数人性化设计和便捷功能。
-
-它的语法简洁而优雅，代码量少，对新手友好。
-
-官方网站：[https://DrissionPage.cn](https://drissionpage.cn)
-
-项目地址：[gitee](https://gitee.com/g1879/DrissionPage)    |    [github](https://github.com/g1879/DrissionPage)     |    [gitcode](https://gitcode.com/g1879/DrissionPage) 
-
-您的星星是对我最大的支持💖
-
---- 
-
-<table>
-<tr>
-<td width="50%"><a href="https://proxy-seller.com/?utm_source=drissionpage&utm_medium=referral&utm_campaign=partner_promo&utm_term=drissionpage&partner=889CD46F1F2942CD" target="_blank"><img src="https://drissionpage.cn/img/Proxy-Seller.png"/></a><a href="https://proxy-seller.com/?utm_source=drissionpage&utm_medium=referral&utm_campaign=partner_promo&utm_term=drissionpage&partner=889CD46F1F2942CD" target="_blank">
-Proxy-Seller - Reliable Proxies for Web Scraping & Automation
-<br/>Proxy-Seller provides high-quality Residential, ISP, Datacenter IPv4/IPv6, and Mobile proxies across 195+ locations worldwide. With HTTP(S) and SOCKS5 support, flexible pricing starting at just $0.70 per IP, and 24/7 customer support, Proxy-Seller is an excellent choice for web scraping, data collection, browser automation, and other online tasks.
-<br/>Exclusive 15% Discount - Use Code: DRISSIONPAGE
-<br/>
-提供覆盖全球 195+ 地区的住宅、ISP、IPv4/IPv6 及移动代理，支持 HTTP(S)/SOCKS5 协议，价格低至 $0.70/IP，提供 24/7 客服支持。适用于网络爬虫、数据采集及浏览器自动化。
-<br/>专属 85 折优惠码：DRISSIONPAGE</a>
-</td>
-
-<td width="50%"><a href="https://proxylane.dev/redeem?code=DRISSIONPAGE3GB&utm_source=drissionpage&utm_medium=partnership&utm_campaign=drissionpage_sponsor_202610&utm_content=github_readme" target="_blank"><img src="https://drissionpage.cn/img/proxylane.png"/></a><br/>
-<a href="https://proxylane.dev/redeem?code=DRISSIONPAGE3GB&utm_source=drissionpage&utm_medium=partnership&utm_campaign=drissionpage_sponsor_202610&utm_content=github_readme" target="_blank">ProxyLane 住宅代理覆盖 195 个国家，含中国电信、联通、移动住宅 IP；95%+ IP 获 Scamalytics 低风险评级，可按城市、ISP、ASN 定向，粘性会话最长 72 小时。DrissionPage 5.0 起，set_proxy() 和 new_context(proxy=...) 直接支持账号密码代理：每个上下文一个会话名、一个独立住宅 IP，适合多账号、批量注册、AI Agent 和分地区采集。新用户凭优惠码 DRISSIONPAGE3GB 注册即可免费领取 3GB，付费流量永不过期。</a></td>
-</tr>
-  
-<tr>
-<td width="50%"><a href="https://mooproxy.net/?utm_source=drissionpage"><img src="https://drissionpage.cn/img/mooproxy.jpeg"/></a><br/>
-<a href="https://mooproxy.net/?utm_source=drissionpage">Mooproxy 全球住宅代理 IP｜海量优质 IP 池，拥有1亿优质住宅IP资源，一手自营IP池，低至 0.2 U/GB｜注册即送 500M 免费流量，先体验，好用再买｜流量永久有效，不限使用时间，大规模 IP 池、低门槛体验、长期有效流量，让代理预算真正花在业务上！</a></td>
-
-<td width="50%"><a href="https://www.nextproxy.com?utm_source=drissionpage" target="_blank"><img src="https://www.nextproxy.com/affiliate-banners/zh/nextproxy-1500x176-motion.svg?v=aligned-layout-20260910"/></a>
-<a href="https://www.nextproxy.com?utm_source=drissionpage" target="_blank">NextProxy 是面向开发者与企业的全球优质代理服务商，拥有 1 亿+高纯度住宅 IP，出口来自真实家庭网络，支持国家、州省及城市级定位。独立出口配合指纹隔离，可降低账号关联与风控概率，适用于跨境电商、社媒运营、广告验证和数据采集。</a></td>   
-  </tr>
-  
-<tr>
-<td width="50%"><a href="https://www.ipwo.net/?ref=giteeg1879" target="_blank"><img src="https://drissionpage.cn/img/ipwo.png"/></a><a href="https://www.ipwo.net/?ref=giteeg1879" target="_blank">IPWO 提供全球多个地区的住宅代理 IP，为网页自动化和数据采集项目提供代理网络选择。<br/>对于使用 DrissionPage 的开发者，可根据任务需求配置不同地区的代理，用于网页访问、跨境数据采集、市场调研及自动化测试等场景。</a></td>
-
-<td width="50%"></td>
-  </tr>
-
-  </table>
+DrissionPage 是一个基于 Python 的网页自动化工具，既能控制浏览器，也能收发数据包，还能把两者合而为一，可兼顾浏览器自动化的便利性和 requests 的高效率。
 
 ---
 
-# 💡 理念
+## ✨ 本 fork 新增功能
 
-简洁而强大！
+### 现代定位层：`?` 查询 DSL + `Q` Builder + 混合下推引擎
 
---- 
+针对原定位语法的几个痛点——**简写必须放在最前**（`tag=` 后置即失效）、**`text()` 与 `@@text()` 层级易混**、**多条件没有显式逻辑运算符**——新增了一套词法无歧义、顺序无关、可组合、可调试的现代定位层。
 
-# ☀️ 特性和亮点
+以 `?` 开头的字符串或 `Q` 对象即触发新引擎，与旧语法并存互不影响。完整设计规范见 [docs/final-syntax.md](docs/final-syntax.md)。
 
-作者经过长期实践，踩过无数坑，总结出的经验全写到这个库里了。
+#### 1. 条件顺序无关，逻辑显式
 
-## 🎇 强大的自研内核
+```python
+# 旧写法：tag 必须在最前、@@tag()= 必须带括号，否则静默返回 NoneElement
+header.ele('tag:input@@type=filter')
 
-本库采用全自研的内核，内置无数实用功能，对常用功能作了整合和优化，对比 selenium，有以下优点：
+# 新写法：条件顺序随意，&& / || / ! / () 显式组合
+header.ele('?input && type=filter')
+header.ele('?type=filter && input')          # 同样命中
+tab.ele('?(div || span) && .btn && !id=ad')  # 或、非、括号嵌套
+```
 
-- 不基于 webdriver
-- 无需为不同版本的浏览器下载不同的驱动
-- 运行速度更快
-- 可以跨 iframe 查找元素，无需切入切出
-- 把 iframe 看作普通元素，逻辑更清晰
-- 可同时操作多个标签页，无需切换
-- 可以直接读取浏览器缓存保存图片，无需用 GUI 点击另存
-- 可以对整个网页截图，包括视口外的部分
-- 可处理非`open`状态的 shadow-root
+#### 2. 文本层级与直觉对齐
 
-## 🎇 亮点功能
+```python
+tab.ele('?text*=ABC')         # 深层文本（相当于 ele.text，含子孙元素）
+tab.ele('?owntext=ABC')       # 仅直属文本节点
+tab.ele('?a && text*=ABC')    # <a> 且任意层级文本包含 ABC
+```
 
-除了以上优点，本库还内置了无数人性化设计。
+#### 3. 正则匹配 `/=` 与混合下推引擎
 
-- 极简的定位语法，查找元素更加容易
-- 集成大量常用功能，代码更优雅，功能强大稳定
-- 无处不在的等待和自动重试，使不稳定的网络变得易于控制，程序更稳定，编写更省心
-- 提供强大的下载工具，操作浏览器时也能享受快捷可靠的下载功能
-- 允许反复使用已经打开的浏览器，无需每次运行从头启动浏览器，调试方便
-- 使用 ini 文件保存常用配置，自动调用，提供便捷的设置，远离繁杂的配置项
-- 内置 lxml 作为解析引擎，解析速度成几个数量级提升
-- 使用 POM 模式封装，可直接用于测试，便于扩展
-- 高度集成的便利功能，从每个细节中体现
-- 还有很多细节，这里不一一列举，欢迎实际使用中体验：D
+```python
+tab.ele('?a && href/="/item/\\d+\\.html$"')          # 正则匹配
+tab.ele(Q('a', href__regex=r'/item/\d+\.html$'))     # 等价的 Q 写法
+```
 
---- 
+纯 XPath 可表达的查询直接编译为**原生 XPath，零额外开销**；含正则等无法下推的节点时，自动切换为 **hybrid 模式**：XPath 安全超集预筛候选 + 本地精筛，绝不漏杀。
 
-# 📝 使用条款
+#### 4. `Q` Builder：动态条件免转义
 
-允许任何人以个人身份使用或分发本项目源代码，但仅限于学习和合法非盈利目的。
-个人或组织如未获得版权持有人授权，不得将本项目以源代码或二进制形式用于商业行为。
+变量中含引号、`&&`、括号也绝对安全，专为动态组装设计：
 
-使用本项目需满足以下条款，如使用过程中出现违反任意一项条款的情形，授权自动失效。
-- 禁止将DrissionPage应用到任何可能违反当地法律规定和道德约束的项目中
-- 禁止将DrissionPage用于任何可能有损他人利益的项目中
-- 禁止将DrissionPage用于攻击与骚扰行为
-- 遵守Robots协议，禁止将DrissionPage用于采集法律或系统Robots协议不允许的数据
+```python
+from DrissionPage import Q
 
-使用DrissionPage发生的一切行为均由使用人自行负责。
-因使用DrissionPage进行任何行为所产生的一切纠纷及后果均与版权持有人无关，
-版权持有人不承担任何使用DrissionPage带来的风险和损失。
-版权持有人不对DrissionPage可能存在的缺陷导致的任何损失负任何责任。
+q = Q('a', text__contains=user_input, href__startswith='https://') & ~Q.id('ad')
+q = (Q.tag('div') | Q.tag('span')) & Q.cls('btn')
+q = Q.attr('data-testid').exists()      # 任意特殊属性名
+q = Q.text.regex(r'^\s*登录')            # 流式调用
+tab.ele(q)
+```
 
----  
+#### 5. 调试友好，所见即所得
 
-# ☕ 请我喝咖啡
+非法语法必报 `LocatorError`，带位置指针与修改建议（Did-You-Mean）：
 
-作者是个人开发者，开发和写文档工作量较为繁重。
+```text
+查询语法错误（位置 2）
+  ?a!=b
+    ^^
+原因: 不支持 != 运算符
+建议: 否定请统一使用 ! 前缀，如 !a=b
+```
 
-如果本项目对您有所帮助，不妨打赏一下作者 ：）
+- 未命中时 `NoneElement` 自动回显解析结果：`<NoneElement ..., parsed=tag="buttton">` —— 打错标签名一眼即破
+- `explain_loc('?...')` / `q.explain()` 打印原始输入、标准式、AST、执行策略与实际下推 XPath
 
-![](https://drissionpage.cn/img/code.jpg)
+#### 速查卡
+
+```text
+── 字符串 DSL（? 前缀）─────────────────────────────────────────
+?input                        标签 input（位置无关；* 表示任意标签）
+?#login                       id = login
+?.el-input__inner             class 分词匹配（CSS 语义）
+?type=filter                  属性全等
+?type*=fil / ^= / $=          包含 / 开头 / 结尾
+?text*=ABC                    深层文本包含（含子孙）
+?owntext*=ABC                 仅直属文本节点
+?text/="^\s*登录"             文本正则（含 () | 空格需加引号）
+?@data-testid                 存在该属性；?!@data-testid 不存在
+?@* / ?!@*                    有任意属性 / 没有任何属性
+?@tag=x                       @ 转义保留键（匹配字面属性 tag）
+?@"@click"*=submit            引号转义特殊属性名（如 Vue @click）
+?input && type=filter         与（顺序随意；别名 &）
+?(div || span) && !id=ad      或（别名 |）、非（!）、括号嵌套
+
+── Python Q Builder（动态变量防注入）─────────────────────────────
+Q('input', type='filter')                       # 基础构造
+Q('a', text__contains=kw, href__startswith='/') # 关键字后缀
+Q.attr('data-testid').exists()                  # 特殊属性名
+Q.text.regex(r'\d+') & ~Q.id('ad')              # 流式 + 位运算 & | ~
+explain_loc('?...') / q.explain()               # 打印 AST 与下推 XPath
+```
+
+#### 支持范围与边界
+
+| 能力 | 支持 |
+|---|---|
+| 页面 / 元素 / ShadowRoot / iframe / Session 模式 | ✅ |
+| `s_ele()` / `s_eles()` 快照查询 | ✅ |
+| `offset()` 与 `east/south/west/north()` 方向定位 | ✅ |
+| `wait.eles_loaded()` 等等待接口 | ✅ |
+| 旧语法 | 100% 不变，零迁移成本 |
+| `parent() / child() / next()` 等轴方法含 `/=` 正则的查询 | ⚠️ 暂不支持（纯 XPath 查询可用） |
+
+---
+
+## 安装
+
+本仓库无独立打包文件，按源码方式使用：
+
+```shell
+git clone https://github.com/mdview2026/DrissionPage.git
+cd DrissionPage
+pip install -r requirements.txt
+```
+
+在仓库根目录下直接使用（`import DrissionPage` 解析到当前目录源码）：
+
+```shell
+# Linux / macOS
+export PYTHONPATH=$PWD
+# Windows (CMD)
+set PYTHONPATH=%CD%
+
+python -c "from DrissionPage import Q; print(Q('input', type='filter'))"
+```
+
+也可以把 `DrissionPage/` 目录拷入自己的项目，或自行补一份 `pyproject.toml` 安装。
+
+## 测试
+
+新增功能测试位于 `tests/feature_cases/test_query_locator.py`，不依赖浏览器，覆盖设计文档第 9 节验收矩阵：AST 往返不变量（含随机生成 300 例）、双前端等价性、新旧行为等价性、混合下推 soundness（零漏杀零误杀）、词法编码地狱、报错指针。
+
+---
+
+## 上游与致谢
+
+- 原项目作者 g1879，项目地址：[github](https://github.com/g1879/DrissionPage) ｜ [gitee](https://gitee.com/g1879/DrissionPage) ｜ [gitcode](https://gitcode.com/g1879/DrissionPage)
+- 官方网站与文档：[https://DrissionPage.cn](https://drissionpage.cn)
+- 本 fork 遵循上游 [LICENSE](LICENSE)，感谢原作者的杰出工作 💖
